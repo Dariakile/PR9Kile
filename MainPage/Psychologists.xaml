@@ -1,0 +1,29 @@
+﻿<Page x:Class="PR9Kile.MainPage.Psychologists"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PR9Kile.MainPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="677" d:DesignWidth="1500"
+      Title="Psychologists">
+
+    <Grid>
+        <DataGrid x:Name="DGPsychologists" AutoGenerateColumns="False" IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Фамилия" Binding="{Binding Surname}" Width="25*"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="25*"/>
+                <DataGridTextColumn Header="Отчество" Binding="{Binding Patronymic}" Width="25*"/>
+                <DataGridTextColumn Header="Специальность" Binding="{Binding Type}" Width="25*"/>
+                <DataGridTextColumn Header="Кабинет" Binding="{Binding Cabinet}" Width="25*"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

@@ -1,0 +1,32 @@
+﻿<Window x:Class="PR9Kile.Avtorizacia"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR9Kile"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="400" Width="530"
+        WindowStartupLocation="CenterScreen" Icon="/Resources/icon.png">
+    <Grid>
+        <StackPanel>
+            <TextBlock Background="Transparent" Height="20"/>
+            <TextBlock Text="Вход" FontSize="28" Style="{StaticResource TBAvtorizacia}"/>
+            <TextBlock Background="Transparent" Height="20"/>
+            <TextBlock Text="Чтобы войти укажите ваш логин и пароль" FontSize="23" Style="{StaticResource TBAvtorizacia}"/>
+
+            <TextBlock Background="Transparent" Height="20"/>
+            <Border Style="{StaticResource BorderAvtorizacia}">
+                <TextBox Style="{StaticResource TextBoxAvtorizacia}" x:Name="Login"/>
+            </Border>
+            <TextBlock Background="Transparent" Height="20"/>
+            <Border Style="{StaticResource BorderAvtorizacia}">
+                <TextBox Style="{StaticResource TextBoxAvtorizacia}" x:Name="Password"/>
+            </Border>
+            <TextBlock Background="Transparent" Height="20"/>
+            <Border Style="{StaticResource BorderAvtorizacia}" Background="#1d468f">
+                <Button Style="{StaticResource ButAvtorizacia}" x:Name="OnSubmit" Content="Войти" Click="OnSubmit_Click"/>
+            </Border>
+            <TextBlock Background="Transparent" Height="20"/>
+        </StackPanel>
+    </Grid>
+</Window>
